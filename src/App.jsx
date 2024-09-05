@@ -1,8 +1,12 @@
+import AddTasks from "./components/AddTasks";
+import Tasks from "./components/Tasks";
+
 function App() {
-  const message = "Ola Mundo do React";
   return (
     <div>
-      <h1>Foco nos estudos {message}</h1>
+      <h1>Lista de Tarefas</h1>
+      <AddTasks />
+      <Tasks />
     </div>
   );
 }
