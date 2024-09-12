@@ -1,4 +1,5 @@
 import AddTasks from "./components/AddTasks";
+import { BoxSelection } from "./components/BoxSelection";
 import { ChangeText } from "./components/ChangeText";
 import { Counter } from "./components/Counter";
 import Tasks from "./components/Tasks";
@@ -12,6 +13,7 @@ function App() {
       <Tasks />
       <Counter />
       <ChangeText />
+      <BoxSelection />
     </div>
   );
 }
