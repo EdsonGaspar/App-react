@@ -1,4 +1,5 @@
 import AddTasks from "./components/AddTasks";
+import { ChangeText } from "./components/ChangeText";
 import { Counter } from "./components/Counter";
 import Tasks from "./components/Tasks";
 import "./index.css";
@@ -10,6 +11,7 @@ function App() {
       <AddTasks />
       <Tasks />
       <Counter />
+      <ChangeText />
     </div>
   );
 }
