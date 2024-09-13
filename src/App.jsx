@@ -31,7 +31,7 @@ function App() {
           Lista de Tarefas
         </h1>
         <AddTasks />
-        <Tasks />
+        <Tasks Tasks={tasks} />
       </div>
     </div>
   );
