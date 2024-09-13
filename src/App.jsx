@@ -3,6 +3,7 @@ import AddTasks from "./components/AddTasks";
 import { BoxSelection } from "./components/BoxSelection";
 import { ChangeText } from "./components/ChangeText";
 import { Counter } from "./components/Counter";
+import { ObjectUseState } from "./components/ObjectUseState";
 import Tasks from "./components/Tasks";
 import "./index.css";
 
@@ -16,6 +17,7 @@ function App() {
       <ChangeText />
       <BoxSelection />
       <AddAge />
+      <ObjectUseState />
     </div>
   );
 }
