@@ -36,6 +36,10 @@ function App() {
     });
     setTasks(newTasks);
   }
+  function onDeleteTaskClick(taskiD) {
+    const newTasks = tasks.filter((task) => task.id !== taskiD);
+    setTasks(newTasks);
+  }
 
   return (
     <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
@@ -44,7 +48,11 @@ function App() {
           Lista de Tarefas
         </h1>
         <AddTasks />
-        <Tasks tasks={tasks} onTaskClick={onTaskClick} />
+        <Tasks
+          tasks={tasks}
+          onTaskClick={onTaskClick}
+          onDeleteTaskClick={onDeleteTaskClick}
+        />
       </div>
     </div>
   );

@@ -5,3 +5,5 @@
 # \Um componente é uma função
 
 # O componente do Icon para ver detalhes pertence ao lucide icon e e o ChevronRightIcon
+
+# O icon utilizado para deletar e o TrashIcon
