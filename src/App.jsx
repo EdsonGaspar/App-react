@@ -24,6 +24,19 @@ function App() {
       isCompleted: false,
     },
   ]);
+
+  function onTaskClick(taskiD) {
+    const newTasks = tasks.map((task) => {
+      // Preciso actualizar esta tarefa
+      if (task.id === taskiD) {
+        return { ...task, isCompleted: !task.isCompleted };
+      }
+      // Não preciso actualizar esta tarefa
+      return task;
+    });
+    setTasks(newTasks);
+  }
+
   return (
     <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
       <div className="w-[500px] border">
@@ -31,7 +44,7 @@ function App() {
           Lista de Tarefas
         </h1>
         <AddTasks />
-        <Tasks tasks={tasks} />
+        <Tasks tasks={tasks} onTaskClick={onTaskClick} />
       </div>
     </div>
   );
