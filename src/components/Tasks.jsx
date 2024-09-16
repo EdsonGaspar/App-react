@@ -1,3 +1,5 @@
+import { ChevronRightIcon, TrashIcon } from "lucide-react";
+
 function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
   return (
     <div>
@@ -12,12 +14,14 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
             >
               {task.title}
             </button>
-            <button className="bg-slate-400 p-2 rounded-md">Dtls</button>
+            <button className="bg-slate-400 p-2 rounded-md">
+              <ChevronRightIcon />
+            </button>
             <button
               onClick={() => onDeleteTaskClick(task.id)}
               className="bg-slate-400 p-2 rounded-md"
             >
-              Dlt
+              <TrashIcon />
             </button>
           </li>
         ))}
