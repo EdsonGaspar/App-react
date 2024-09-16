@@ -56,7 +56,7 @@ function App() {
         <h1 className="text-3xl text-slate-100 font-bold text-center">
           Lista de Tarefas
         </h1>
-        <AddTasks />
+        <AddTasks onAddTaskSubmit={onAddTaskSubmit} />
         <Tasks
           tasks={tasks}
           onTaskClick={onTaskClick}
