@@ -10,4 +10,4 @@
 
 # Para gerar Id aleatório uso-se uuid;
 
-# Para
+# Usando o useSearchParams do React Router Dom para pegar a url e lhe inserir como conteudo na pagina de destino
