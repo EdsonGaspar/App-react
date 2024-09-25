@@ -13,6 +13,26 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
+  // Quando usamos o useEffect e dentro do array e vai diz que a função vai ser chamada a primeira vez no inicio do programa
+  useEffect(() => {
+    // Chamar API
+    async function fetchTasks() {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/todos?_limit=10",
+        { method: "GET" }
+      );
+
+      // Pegar os dados que ela retorna
+      const data = await response.json();
+
+      // Salavr os dados na useStat
+      setTasks(data);
+
+      console.log(data);
+    }
+    fetchTasks();
+  }, []);
+
   function onTaskClick(taskiD) {
     const newTasks = tasks.map((task) => {
       // Preciso actualizar esta tarefa

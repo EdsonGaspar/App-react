@@ -11,3 +11,5 @@
 # Para gerar Id aleatório uso-se uuid;
 
 # Usando o useSearchParams do React Router Dom para pegar a url e lhe inserir como conteudo na pagina de destino
+
+# API, para chamar uma API podemos usar uma biblioteca como "axios" ou usar o fecth do javascript
