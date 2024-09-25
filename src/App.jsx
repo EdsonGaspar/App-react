@@ -10,7 +10,7 @@ function App() {
   );
 
   useEffect(() => {
-    localStorage.setItem("Tasks", JSON.stringify(tasks));
+    localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
   function onTaskClick(taskiD) {
